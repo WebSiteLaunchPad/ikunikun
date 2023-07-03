@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6 demo-2 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7 demo-2 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8 demo-2 no-js" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" class="demo-2 no-js">
+<!--<![endif]-->
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!-- Basic Page Needs
+  ================================================== -->
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<!-- Mobile Specific Meta
+    ================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- All Css -->
+<link rel="stylesheet" type="text/css" href="/skin/css/bootstrap.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/skin/css/font-awesome.min.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/skin/css/icofont.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/skin/css/hover-min.css" media="screen">
+<!--Owl Carousel-->
+<link rel="stylesheet" type="text/css" href="/skin/css/owl.carousel.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/skin/css/owl.theme.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/skin/css/owl.transitions.css" media="screen">
+<!--Portfolio-->
+<link rel="stylesheet" type="text/css" href="/skin/css/spsimpleportfolio.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/skin/css/featherlight.min.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/skin/css/style.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/skin/css/responsive.css" media="screen">
+</head>
+
+<body class="body-innerwrapper">
+<!--Pre loader--> 
+{dede:include filename="head.htm"/}
+<section id="breadcrumb" class="two green-color">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center breadcrumb-block">
+        <h3>{dede:field name='typename'/}</h3>
+        <ol class="breadcrumb">
+          <style>
+					.breadcrumb, .breadcrumb a{ color:#FFFFFF}
+					</style>
+          {dede:field name='position'/}
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Portfolio-->
+<section id="portfolio" class="space-top one">
+  <div class="container">
+    <div class="row">
+      <div id="sp-simpleportfolio" class="sp-simpleportfolio sp-simpleportfolio-view-items layout-gallery-space">
+        <div class="sp-simpleportfolio-items sp-simpleportfolio-columns-3"> {dede:list pagesize='9' infolen='100'}
+          <div class="sp-simpleportfolio-item" data-groups='[""]'>
+            <div class="sp-simpleportfolio-overlay-wrapper clearfix"> <img class="sp-simpleportfolio-img" src="[field:picname/]" alt="[field:fulltitle/]" style="height:240px; width:100%">
+              <div class="sp-simpleportfolio-overlay">
+                <div class="sp-vertical-middle">
+                  <div>
+                    <div class="sp-simpleportfolio-btns"> </div>
+                    <h3 class="sp-simpleportfolio-title"> <a href="[field:arcurl/]" >[field:title/]</a></h3>
+                    <div class="sp-simpleportfolio-tags">[field:pubdate function="MyDate('Y-m-d',@me)"/]</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/dede:list} </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Action 4-->
+<section class="space action bg one">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 text-center action-block">
+        <div class="dede_pages">
+          <ul class="pagelist">
+            {dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}
+          </ul>
+        </div>
+        <!-- /pages --> 
+      </div>
+    </div>
+  </div>
+</section>
+<!--footer--> 
+{dede:include filename="footer.htm"/} 
+<!--All Js--> 
+<script type="text/javascript" src="/skin/js/jQuery.js"></script> 
+<script type="text/javascript" src="/skin/js/jquery.easing.min.js"></script> 
+<script type="text/javascript" src="/skin/js/bootstrap.js"></script> 
+<!--<script src="https://use.fontawesome.com/e18447245b.js"></script>--> 
+<script type="text/javascript" src="/skin/js/appear.js"></script> 
+<!--Portfolio--> 
+<script type="text/javascript" src="/skin/js/isotope.js"></script> 
+<script type="text/javascript" src="/skin/js/spsimpleportfolio.js"></script> 
+<script type="text/javascript" src="/skin/js/featherlight.min.js"></script> 
+<script type="text/javascript" src="/skin/js/jquery.shuffle.modernizr.min.js"></script> 
+<script type="text/javascript" src="/skin/js/steller.js"></script> 
+<script type="text/javascript" src="/skin/js/smooth-scroll.js"></script> 
+<script type="text/javascript" src="/skin/js/owl.carousel.js"></script> 
+<script type="text/javascript" src="/skin/js/custom.js"></script>
+</body>
+</html>

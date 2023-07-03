@@ -1,0 +1,57 @@
+<div id="preloader">
+  <div class="wrapper">
+    <div class='circle'>
+      <div class="circle-cutter"></div>
+      <div class="circle-inner"></div>
+    </div>
+  </div>
+  <footer>
+    <p>{dede:global.cfg_powerby/}</p>
+  </footer>
+</div>
+<!--Top bar-->
+<section id="topbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 topbar-block">
+        <ul>
+          <li><a href="tel:{dede:global.moke_phone/}"><i class="icofont icofont-phone"></i>{dede:global.moke_phone/}</a> </li>
+          <li><a href="mailto:{dede:global.moke_email/}"><i class="icofont icofont-envelope"></i>{dede:global.moke_email/}</a> </li>
+          <li><a href="/a/lianxiwomen/"><i class="icofont icofont-social-google-map"></i>{dede:global.moke_adress/}</a> </li>
+        </ul>
+      </div>
+      <div class="col-sm-4 topbar-block text-right">
+        <ul>
+          <li><a href="#">中文版</a> </li>
+          <li><a href="#" data-toggle="modal" data-target=".bs-modal-sm">英文版</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Header-->
+<header class="header-3">
+  <nav class="navbar active" data-spy="affix" data-offset-top="1" id="slide-nav">
+    <div class="container">
+      <div class="navbar-header col-sm-3 col-md-3 col-xs-12">
+        <button type="button" class="navbar-toggle"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a href="/" class="menu-logo black">M</a> </div>
+      <!--Nav links-->
+      <div class=" navbar-collapse col-sm-9 col-md-9" id="menu_nav"> <a href="#" class="closs"><i class="icofont icofont-close-line"></i></a>
+        <ul class="nav navbar-nav">
+          <li class="dropdown"> <a href="/">网站首页</a> </li>
+          {dede:channelartlist typeid='top'}
+          <li class="dropdown"> <a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a>
+            <ul class="dropdown-menu">
+              {dede:channel type='son' noself='yes'}
+              <li><a href="[field:typeurl/]">[field:typename/]</a> </li>
+              {/dede:channel}
+            </ul>
+          </li>
+          {/dede:channelartlist}
+        </ul>
+      </div>
+      <!--/.navbar-collapse--> 
+    </div>
+  </nav>
+</header>

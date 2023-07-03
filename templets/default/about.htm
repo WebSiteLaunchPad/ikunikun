@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6 demo-2 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7 demo-2 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8 demo-2 no-js" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" class="demo-2 no-js">
+<!--<![endif]-->
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!-- Basic Page Needs
+  ================================================== -->
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<!-- Mobile Specific Meta
+    ================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- All Css -->
+<link rel="stylesheet" type="text/css" href="/skin/css/bootstrap.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/skin/css/font-awesome.min.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/skin/css/icofont.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/skin/css/hover-min.css" media="screen">
+<!--Owl Carousel-->
+<link rel="stylesheet" type="text/css" href="/skin/css/owl.carousel.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/skin/css/owl.theme.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/skin/css/owl.transitions.css" media="screen">
+<!--Portfolio-->
+<link rel="stylesheet" type="text/css" href="/skin/css/spsimpleportfolio.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/skin/css/featherlight.min.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/skin/css/style.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/skin/css/responsive.css" media="screen">
+</head>
+
+<body class="body-innerwrapper">
+<!--Pre loader--> 
+{dede:include filename="head.htm"/}
+<section id="breadcrumb" class="two green-color">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center breadcrumb-block">
+        <h3>{dede:field name='typename'/}</h3>
+        <ol class="breadcrumb">
+          <style>
+					.breadcrumb, .breadcrumb a{ color:#FFFFFF}
+					</style>
+          {dede:field name='position'/}
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Portfolio-->
+<section id="services" class="space-top three">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 service-block text-center">
+        <h3 class="animate-in move-up">我们致为于打造优秀的建站资源共享平台</h3>
+        <p class="animate-in move-up">百度云成立于2010年，至今已经发展成为国内最大的模板分享平台 <br>
+          为广大网站建设从业者提供了方便和帮助。我们拥有大量优质的建站资源，资源市场价值上万元。 <br>
+          在这里聚集了大量网络从业人员，提供来自全国各地、不同行业的资源与人脉。</p>
+        <img src="/skin/images/Signature.png" class="signature animate-in move-up" alt="Signature"> </div>
+    </div>
+  </div>
+</section>
+<!--action 1-->
+<section class="action-3">
+  <div class="container-fluid">
+    <div class="row"> 
+      <!--main heading-->
+      <div class="main-heading two col-sm-12 no-padding text-center owl-carousel owl-theme action_3-slider">
+        <div class="item blue space-top">
+          <h2 class="animate-in move-up">培训班第一阶段：预习</h2>
+          <p class="animate-in move-up">从零开始系统全面的教你如何建立一个属于自己的网站并实现盈利 <br>
+            观看百度学院里的网站建设视频课程，对网站建设流程有一个初步的了解 <br>
+            认识html语言，div+css布局等一些建站基础知识</p>
+          <img src="/skin/images/cal-to-action-4.png" class="animate-in move-up" alt="Call To Action"> </div>
+        <div class="item green space-top">
+          <h2 class="animate-in move-up">培训班第二阶段：上课</h2>
+          <p class="animate-in move-up">课程涉及网站搭建，网站SEO，模板开发等最新建站技术 <br>
+            百度老师通过QQ群远程教学，全面系统的给大家讲解建站知识。 <br>
+            内容涉及网站搭建，网站优化，模板开发等最新建站技术。</p>
+          <img src="/skin/images/cal-to-action-4.png" class="animate-in move-up" alt="Call To Action"> </div>
+        <div class="item orange space-top">
+          <h2 class="animate-in move-up">培训班第三阶段：实践</h2>
+          <p class="animate-in move-up">从零开始系统全面的教你如何建立一个属于自己的网站并实现盈利 <br>
+            自己搭建一个网站并开发一套模板，碰到不理解或不会的，可以咨询我们在线QQ辅导员 <br>
+            我们每天8小时在线提供顾问式指导</p>
+          <img src="/skin/images/cal-to-action-4.png" class="animate-in move-up" alt="Call To Action"> </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Our team-->
+<section id="our-team" class="space two border-bottom-full">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 team-block animate-in fade-in">
+        <div class="inner text-center">
+          <div class="team-image"> <img src="/skin/images/Member-Image.png" alt="Team Member"> </div>
+          <h4><a href="#">John Doe</a> </h4>
+          <div class="designation">Creative Director</div>
+        </div>
+      </div>
+      <div class="col-sm-3 team-block animate-in fade-in">
+        <div class="inner text-center">
+          <div class="team-image"> <img src="/skin/images/Member-Image1.png" alt="Team Member"> </div>
+          <h4><a href="#">Maria Jones</a> </h4>
+          <div class="designation">Data Information</div>
+        </div>
+      </div>
+      <div class="col-sm-3 team-block animate-in fade-in">
+        <div class="inner text-center">
+          <div class="team-image"> <img src="/skin/images/Member-Image2.png" alt="Team Member"> </div>
+          <h4><a href="#">David Ramon</a> </h4>
+          <div class="designation">Lead Developer</div>
+        </div>
+      </div>
+      <div class="col-sm-3 team-block animate-in fade-in">
+        <div class="inner text-center">
+          <div class="team-image"> <img src="/skin/images/Member-Image3.png" alt="Team Member"> </div>
+          <h4><a href="#">Faria Nora</a> </h4>
+          <div class="designation">Creative Director</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--footer--> 
+{dede:include filename="footer.htm"/} 
+<!--All Js--> 
+<script type="text/javascript" src="/skin/js/jQuery.js"></script> 
+<script type="text/javascript" src="/skin/js/jquery.easing.min.js"></script> 
+<script type="text/javascript" src="/skin/js/bootstrap.js"></script> 
+<!--<script src="https://use.fontawesome.com/e18447245b.js"></script>--> 
+<script type="text/javascript" src="/skin/js/appear.js"></script> 
+<!--Portfolio--> 
+<script type="text/javascript" src="/skin/js/isotope.js"></script> 
+<script type="text/javascript" src="/skin/js/spsimpleportfolio.js"></script> 
+<script type="text/javascript" src="/skin/js/featherlight.min.js"></script> 
+<script type="text/javascript" src="/skin/js/jquery.shuffle.modernizr.min.js"></script> 
+<script type="text/javascript" src="/skin/js/steller.js"></script> 
+<script type="text/javascript" src="/skin/js/smooth-scroll.js"></script> 
+<script type="text/javascript" src="/skin/js/owl.carousel.js"></script> 
+<script type="text/javascript" src="/skin/js/custom.js"></script>
+</body>
+</html>
